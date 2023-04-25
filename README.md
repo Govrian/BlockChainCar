@@ -1,4 +1,3 @@
-
 # Exécuter la démo
 Démarrer le réseau et initialiser la blockchain par :
 
