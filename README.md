@@ -1,50 +1,48 @@
 
-# Run the demo
-Start the network and initialize blockchain by:
-```console
+# Exécuter la démo
+Démarrer le réseau et initialiser la blockchain par :
+``console
 $ ./blockchain.py
 ```
-In a second terminal execute the following:
-```console
+Dans un second terminal, exécutez ce qui suit :
+``console
 $ ./manufacturer.py
 ```
-in order to create a block which will be mined by miners (processes).
-The above script simulates a manufacturer. It generates a random ID which
-is considered as an ID of the manufactured car. It sets its mileage to 0 and
-sets additional data like manufacturer (Volkswagen), model (Golf), year
-(current year), country_of_origin (Czech Republic).
+afin de créer un bloc qui sera miné par des mineurs (processus).
+Le script ci-dessus simule un fabricant. Il génère un identifiant aléatoire qui
+qui est considéré comme l'ID de la voiture fabriquée. Il fixe son kilométrage à 0 et
+définit des données supplémentaires telles que le fabricant (Volkswagen), le modèle (Golf), l'année
+(année en cours), pays_d'origine (République tchèque).
 
-Run the following script to simulate a change of the car ownership.
-NOTE: this is a simple demo, so the users doesn't have to exist, you can
-make up buyer id, however, as a car id use the one, `manufacturer.py` script
-generated in the step above and as a seller id use the manufacturer's id.
-```console
+Exécutez le script suivant pour simuler un changement de propriétaire de la voiture.
+REMARQUE : il s'agit d'une simple démonstration, il n'est donc pas nécessaire que les utilisateurs existent.
+Vous pouvez inventer l'identifiant de l'acheteur, cependant, pour l'identifiant de la voiture, utilisez le script `manufacturer.py` généré à l'étape précédente.
+généré dans l'étape précédente et comme identifiant du vendeur, utilisez l'identifiant du constructeur.
+``console
 $ ./seller.py <seller_ID> <buyer_ID> <car_ID>
 ```
 
-Run the following script in order to simulate a check when a car's mileage will
-be edited.
+Exécutez le script suivant afin de simuler une vérification lorsque le kilométrage d'une
+d'une voiture.
 ```console
 $ ./service_station.py <car_ID>
 ```
 
-Try to change the ownership again.
+Pour changer le nombre de kilomètres sur la voiture 
+
 ```console
+./update_mileage.py <id_car> <Nombre de kilomètres>
+```
+
+
+
+Essayez à nouveau de changer de propriétaire.
+``console
 $ ./seller.py <seller_ID> <buyer_ID> <car_ID>
 ```
 
-Run the following script to list the history of the car. It will print all
-blocks where the car_ID is found.
+Exécutez le script suivant pour dresser la liste de l'historique de la voiture. Il affichera tous les blocs
+blocs où l'identifiant de la voiture est trouvé.
 ```console
 $ ./car_history.py <car_ID>
 ```
-
-
-# Authors
-[Martin Kopec](https://www.linkedin.com/in/martin-kopec-07b29096/)
-
-[Robert Albrecht](https://www.linkedin.com/in/robert-albrecht498/)
-
-[Daniel Vitek](https://www.linkedin.com/in/daniel-v%C3%ADtek-683399147/)
-
-
