@@ -2,14 +2,14 @@
 Démarrer le réseau et initialiser la blockchain par :
 
 
-``console
+```console
 $ ./blockchain.py
 ```
 Dans un second terminal, exécutez ce qui suit :
 
 
 
-``console
+```console
 $ ./manufacturer.py
 ```
 
@@ -26,7 +26,7 @@ Vous pouvez inventer l'identifiant de l'acheteur, cependant, pour l'identifiant 
 généré dans l'étape précédente et comme identifiant du vendeur, utilisez l'identifiant du constructeur.
 
 
-``console
+```console
 $ ./seller.py <seller_ID> <buyer_ID> <car_ID>
 ```
 
@@ -50,7 +50,7 @@ $ ./update_mileage.py <id_car> <Nombre de kilomètres>
 
 Essayez à nouveau de changer de propriétaire.
 
-``console
+```console
 $ ./seller.py <seller_ID> <buyer_ID> <car_ID>
 ```
 
