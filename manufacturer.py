@@ -10,7 +10,7 @@ PORT = 65432        # The port used by the server
 
 # for simplicity the variable will simulate a public key, but no public/private
 # key pairs are actually used in this demo
-PUBLIC_KEY = "Thibault"
+PUBLIC_KEY = "1234-STK-station"
 
 block = {
     "timestamp": time.ctime(),
