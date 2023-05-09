@@ -10,17 +10,17 @@ PORT = 65432        # The port used by the server
 
 # for simplicity the variable will simulate a public key, but no public/private
 # key pairs are actually used in this demo
-PUBLIC_KEY = "1234-VW-Group"
+PUBLIC_KEY = "Thibault"
 
 block = {
     "timestamp": time.ctime(),
     "car": {
         "id": str(uuid.uuid4()),
-        "manufacturer": "Volkswagen",
-        "model": "Golf",
+        "manufacturer": "Mini",
+        "model": "Cooper",
         "mileage": 0,
         "year": str(datetime.datetime.today().year),
-        "country_of_origin": "Czech Republic",
+        "country_of_origin": "France",
         "owner": PUBLIC_KEY
     },
     "id": PUBLIC_KEY
